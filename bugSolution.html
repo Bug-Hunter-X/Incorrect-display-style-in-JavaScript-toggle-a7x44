@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be hidden initially.
+  </div>
+  <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+  <script>
+    function toggleVisibility() {
+      const div = document.getElementById("myDiv");
+      if (div.style.display === "none") {
+        div.style.display = "block";
+      } else {
+        div.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
